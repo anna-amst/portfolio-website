@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./fonts/SF-Pro-Display-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.page {
+  background-color: #f0efea;
+  color: black;
+  min-height: 100vh;
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 135px;
+}
+
+p {
+  font-family: "SF Pro Display", Arial, sans-serif;
+}
+h1 {
+  font-family: "SF Pro Display", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 85px;
+  margin: 0;
+}
+.hadd {
+    margin-left: 600px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.header__footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "text description . photo";
+}
+
+.image {
+  background: transparent url("images/myphoto.JPG") center no-repeat;
+  background-size: cover;
+  height: 356px;
+  width: 278px;
+  grid-area: photo;
+}
+.p3 {
+    grid-area: text;
+}
+.p2 {
+    margin-left: 820px;
+    margin-bottom: 61px ;
+}
+
+.description{
+    grid-area: description;
+}
