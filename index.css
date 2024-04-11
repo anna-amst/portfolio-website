@@ -9,13 +9,19 @@
   background-color: #f0efea;
   color: black;
   min-height: 100vh;
-  max-width: 1200px;
   width: 100%;
-  position: relative;
+  position: relative; 
+  min-height: 100vh;
+  margin: 0;
+}
+
+.page__section{
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-header {
+
+.header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -24,43 +30,107 @@ header {
 
 p {
   font-family: "SF Pro Display", Arial, sans-serif;
-}
-h1 {
-  font-family: "SF Pro Display", Arial, sans-serif;
-  font-weight: normal;
-  font-size: 85px;
-  margin: 0;
-}
-.hadd {
-    margin-left: 600px;
-}
-
-p {
   font-size: 16px;
   line-height: 1.5;
 }
 
-.header__footer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "text description . photo";
+.headings{
+  text-align: right;
+  padding-right: 111px;
+  padding-bottom: 60px;
 }
+
+.heading{
+  font-family: "SF Pro Display", Arial, sans-serif;
+  font-size: 85px;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.paragraph{
+  margin-top: 15px;
+
+}
+
+.header__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__footer__description{
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+}
+
+
 
 .image {
   background: transparent url("images/myphoto.JPG") center no-repeat;
   background-size: cover;
   height: 356px;
   width: 278px;
-  grid-area: photo;
-}
-.p3 {
-    grid-area: text;
-}
-.p2 {
-    margin-left: 820px;
-    margin-bottom: 61px ;
 }
 
-.description{
-    grid-area: description;
+
+@media screen and (max-width: 1200px) {
+  .page__section{
+    margin: 20px;
+    max-width: calc(100% - 40px);
+    }
+
+  .heading {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .heading {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 871px) {
+
+  
+  .header{
+    margin-bottom: 53px;
+    font-weight: 400;
+  }
+
+  .headings{
+    max-width: 290px;
+    padding: 0 0 70px;
+    margin: 0 auto;
+  
+  }
+
+  .heading {
+    font-size: 24px;
+    text-align: right;
+}
+
+.location{
+  font-size: 12px;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.header__footer{
+  flex-direction: column-reverse;
+  align-items: center;
+  row-gap: 70px;
+}
+
+#additional-paragraph {
+  visibility: hidden;
+}
+
+.footer__paragraph{
+  font-size: 14px;
+  font-weight: 400;
+}
+
 }
