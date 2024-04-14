@@ -25,7 +25,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 135px;
+  margin-bottom: 100px;
 }
 
 p {
@@ -49,13 +49,14 @@ p {
 }
 .paragraph{
   margin-top: 15px;
-
 }
 
 .header__footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 168px;
+  align-items: flex-end;
 }
 
 .header__footer__description{
@@ -64,7 +65,13 @@ p {
   max-width: 350px;
 }
 
+.footer__paragraph{
+  margin-bottom: 0;
+}
 
+#additional-paragraph{
+  margin-bottom: 0;
+}
 
 .image {
   background: transparent url("images/myphoto.JPG") center no-repeat;
@@ -73,6 +80,43 @@ p {
   width: 278px;
 }
 
+.work{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 100px;
+}
+
+.p__work{
+  font-size: 85px;
+}
+
+.button
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the minimum size as per your need */
+  gap: 20px; /* Adjust the gap between projects */
+}
+
+.project {
+  /* Your project styling */
+}
+
+.big-square {
+  grid-column: span 2;
+  /* Additional styling for big square */
+}
+
+.small-square {
+  /* Additional styling for small squares */
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+  .project-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust the minimum size as per your need */
+  }
+}
 
 @media screen and (max-width: 1200px) {
   .page__section{
@@ -122,6 +166,7 @@ p {
   flex-direction: column-reverse;
   align-items: center;
   row-gap: 70px;
+  padding-bottom: 0;
 }
 
 #additional-paragraph {
