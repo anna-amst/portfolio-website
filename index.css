@@ -55,7 +55,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-bottom: 168px;
+  padding-bottom: 100px;
   align-items: flex-end;
 }
 
@@ -84,38 +84,59 @@ p {
   display: flex;
   justify-content: space-between;
   padding-right: 100px;
+  align-items: center;
+  padding-bottom: 236px;
 }
 
 .p__work{
   font-size: 85px;
 }
 
-.button
-
-.project-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the minimum size as per your need */
-  gap: 20px; /* Adjust the gap between projects */
+.button{
+  width: 226px;
+  height: 54px;
+  font-size: 24px;
 }
 
-.project {
-  /* Your project styling */
+.projects{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
-.big-square {
-  grid-column: span 2;
-  /* Additional styling for big square */
+.project-container{
+  flex: 0 0 345px;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.small-square {
-  /* Additional styling for small squares */
+.project-container.large{
+  flex: 0 0 478px;
 }
 
-/* Media Query for smaller screens */
-@media screen and (max-width: 768px) {
-  .project-container {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust the minimum size as per your need */
-  }
+.project-img{
+  width: 100%;
+  height: 423px;
+  object-fit: cover;
+}
+
+.project-img:hover{
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.project__title {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.project__tools {
+  font-size: 24px;
+  margin: 0;
+  padding-bottom: 22px ;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 1200px) {
@@ -132,6 +153,10 @@ p {
 @media screen and (max-width: 991px) {
   .heading {
     font-size: 60px;
+  }
+
+  .work{
+    padding-right: 0;
   }
 }
 
