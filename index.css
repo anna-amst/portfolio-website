@@ -99,6 +99,10 @@ a:hover{
   padding-bottom: 236px;
 }
 
+.footer{
+  padding-bottom: 30px;
+}
+
 .p__work {
   font-size: 85px;
 }
@@ -122,6 +126,7 @@ a:hover{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(281px, 1fr));
   gap: 16px;
+  padding-bottom: 100px;
 }
 
 .project-container {
@@ -158,6 +163,17 @@ a:hover{
   font-weight: 400;
 }
 
+
+.contact__text{
+  font-size: 64px;
+}
+
+.rights{
+  font-size: 24px;
+  text-align: left;
+  margin: 0;
+}
+
 @media screen and (max-width: 1200px) {
   .page__section {
     margin: 20px;
@@ -182,6 +198,11 @@ a:hover{
     font-size: 60px;
   }
   .p__work {
+    font-size: 60px;
+    margin-bottom: 0;
+  }
+
+  .contact__text{
     font-size: 60px;
     margin-bottom: 0;
   }
@@ -242,7 +263,22 @@ a:hover{
     font-size: 24px;
   }
 
+  .contact__text{
+    font-size: 24px;
+  }
+
+  .projects{
+    padding-bottom: 30px;
+  }
+
+}
+
+@media screen and (max-width: 600px)  {
   .project-container:nth-child(2n + 1) {
     grid-column: auto;
   }
 }
+
+
+/*tooltips*/
+
