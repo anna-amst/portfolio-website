@@ -5,9 +5,6 @@
   font-style: normal;
 }
 
-
-
-
 .page {
   background-color: #f0efea;
   color: black;
@@ -38,6 +35,14 @@ p {
   font-family: "SF Pro Display", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
+}
+a{
+  text-decoration: none;
+  color: #111111;
+}
+
+a:hover{
+  color: #B06941;
 }
 
 .headings {
@@ -108,13 +113,14 @@ p {
 }
 
 .button:hover {
-  background-color: #4a4a4a;
+  background-color: #B06941;
   color: #f0efea;
+  border: none;
 }
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(281px, 1fr));
   gap: 16px;
 }
 

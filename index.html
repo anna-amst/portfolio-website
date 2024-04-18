@@ -11,7 +11,7 @@
     <header class="header">
       <p>{ Anna Vasileva }</p>
       <p id="additional-paragraph">{ software development }</p>
-      <p>{ portfolio }</p>
+      <p><a href="#portfolio">{ portfolio }</a></p>
     </header>
     <main>
       <div class="headings">
@@ -33,10 +33,10 @@
     </div>
     </section>
     <section class="page__section ">
-      <div class="work">
+      <div class="work" id="portfolio">
         <p class="p__work">PROJECTS</p>
-        <button class="button github">github portfolio</button>
-        <button class="button behance">behance portfolio</button>
+        <button class="button github" onclick="location.href='https://github.com/anna-amst'">github portfolio</button>
+        <button class="button behance" onclick="location.href='https://www.behance.net/anna_amst'">behance portfolio</button>
       </div>
       <div class="projects">
         <div class="project-container large">
@@ -55,7 +55,6 @@
               <img src="./images/coffee.jpg" alt="Triple Peaks Coffee Shop Project" class="project-img">
               </div>
         </div>
-      </div>
     </section>
     </main>
   </body>
