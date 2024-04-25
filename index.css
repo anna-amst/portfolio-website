@@ -114,6 +114,7 @@ a:hover {
   background-color: #f0efea;
   border: 1px solid #111111;
   cursor: pointer;
+  padding: 0;
 }
 
 .button:hover {
