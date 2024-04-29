@@ -335,5 +335,9 @@ font-size: 16px;
   .project-container:nth-child(2n + 1) {
     grid-column: auto;
   }
+
+  .overlay{
+    opacity: 1;
+  }
 }
 
